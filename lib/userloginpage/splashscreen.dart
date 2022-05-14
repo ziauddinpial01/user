@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:payraxprass/homepage/nav_bar.dart';
 import 'package:payraxprass/homepage/test.dart';
 import 'package:payraxprass/homepage/timepiker.dart';
 import 'package:payraxprass/userloginpage/extra1.dart';
@@ -17,7 +18,7 @@ _SplashscreenState(){
     Duration(seconds: 3), () {
       setState(() {
         Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (context)=>HomePage()), (route) => false
+          MaterialPageRoute(builder: (context)=>NabBar()), (route) => false
           );
       });
     },
